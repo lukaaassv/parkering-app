@@ -1,0 +1,29 @@
+
+export function getWeekNumber(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+}
+
+export function isWithinParkingTime(date) {
+  const hour = date.getHours();
+  return hour >= 0 && hour < 17;
+}
+
+export function getCurrentTimeAsString (date) {
+  const currentHour = date.getHours();
+  const currentMinutes = date.getMinutes();
+  return `${currentHour}:${currentMinutes.toString().padStart(2, "0")}`;
+}
+
+
+export function parkingTimeLeftAsString (date) {
+  const hoursLeft = 23 - date.getHours();
+  const minutesLeft = 59 - date.getMinutes();
+  return `${hoursLeft}h ${minutesLeft}min`;
+}
+
+export function test() {
+  return "test lyckades!!";
+}
