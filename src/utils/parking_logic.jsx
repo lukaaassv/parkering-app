@@ -9,7 +9,11 @@ export function isDateParkingActive(date) {
 
 //Returnerar sidan man inte får parkera på mellan klockan 00-17 
 export function getForbiddenSide(date) {
-  return date.getDate() % 2 === 0 ? "jämn" : "udda";
+  return date.getDate() % 2 === 0 ? "jämna" : "udda";
+}
+
+export function getAllowedSide(date) {
+  return date.getDate() % 2 === 0 ? "udda" : "jämna";
 }
 
 export function parkingTimeLeft(date) {
