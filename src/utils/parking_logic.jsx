@@ -17,6 +17,6 @@ export function getAllowedSide(date) {
 }
 
 export function parkingTimeLeft(date) {
-    
+
 
 }
