@@ -11,8 +11,10 @@ export function isWithinParkingTime(date) {
   return hour >= 0 && hour < 17;
 }
 
-export function getCurrentTimeAsString (date) {
-  const currentHour = date.getHours();
-  const currentMinutes = date.getMinutes();
-  return `${currentHour}:${currentMinutes.toString().padStart(2, "0")}`;
+export function getCurrentTimeAsString(date) {
+  const currentHour = String(date.getHours()).padStart(2, "0");
+  const currentMinutes = String(date.getMinutes()).padStart(2, "0");
+  const currentSeconds = String(date.getSeconds()).padStart(2, "0");
+
+  return `${currentHour}:${currentMinutes}:${currentSeconds}`;
 }

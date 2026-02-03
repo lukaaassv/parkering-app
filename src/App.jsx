@@ -1,12 +1,12 @@
-import DayCard from "./components/DayCard";
-import TodayCard from "./components/TodayCard";
-import { getCurrentTimeAsString, test } from "./utils/date_logic";
+import DayCard from "./components/DayCard.jsx";
+import TodayCard from "./components/TodayCard.jsx";
+import { getCurrentTimeAsString} from "./utils/date_logic.jsx";
 import { WEEKDAYS, MONTHS } from "./constants/dayAndMonths.jsx";
-import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString} from "./utils/parking_logic.jsx";
-
+import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString } from "./utils/parking_logic.jsx";
+import { useNow } from "./hooks/useNow.jsx";
 function App() {
 
-  const now = new Date();
+   const now = useNow(); // 👈 custom hook
 
   return (
     <div className="App">

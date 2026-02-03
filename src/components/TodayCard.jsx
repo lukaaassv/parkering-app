@@ -1,5 +1,8 @@
-import { parkingTimeLeftAsString, getCurrentTimeAsString } from "../utils/date_logic";
-import { getForbiddenSide} from "../utils/parking_logic.jsx";
+import { getCurrentTimeAsString } from "../utils/date_logic";
+import { getForbiddenSide, parkingTimeLeftAsString} from "../utils/parking_logic.jsx";
+import "./TodayCard.css";
+
+
 
 function TodayCard({day, time, side}){
     return <div className = "day-card">
