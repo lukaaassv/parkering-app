@@ -16,14 +16,3 @@ export function getCurrentTimeAsString (date) {
   const currentMinutes = date.getMinutes();
   return `${currentHour}:${currentMinutes.toString().padStart(2, "0")}`;
 }
-
-
-export function parkingTimeLeftAsString (date) {
-  const hoursLeft = 23 - date.getHours();
-  const minutesLeft = 59 - date.getMinutes();
-  return `${hoursLeft}h ${minutesLeft}min`;
-}
-
-export function test() {
-  return "test lyckades!!";
-}

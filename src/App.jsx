@@ -1,8 +1,8 @@
 import DayCard from "./components/DayCard";
 import TodayCard from "./components/TodayCard";
-import { parkingTimeLeftAsString, getCurrentTimeAsString, test } from "./utils/date_logic";
+import { getCurrentTimeAsString, test } from "./utils/date_logic";
 import { WEEKDAYS, MONTHS } from "./constants/dayAndMonths.jsx";
-import { getForbiddenSide, getAllowedSide} from "./utils/parking_logic.jsx";
+import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString} from "./utils/parking_logic.jsx";
 
 function App() {
 

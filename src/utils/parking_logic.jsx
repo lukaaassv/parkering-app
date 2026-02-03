@@ -1,13 +1,12 @@
 import { getWeekNumber, isWithinParkingTime } from "./date_logic.jsx";
 
-//Kollar om nuvarande vecka har datumparkering
+//Checks if current week has date parking active
 export function isDateParkingActive(date) {
   const week = getWeekNumber(date);
   const inSeason = (week >= 42 && week <= 52) || (week >= 1 && week <= 18);
   return inSeason && isWithinParkingTime(date);
 }
 
-//Returnerar sidan man inte får parkera på mellan klockan 00-17 
 export function getForbiddenSide(date) {
   return date.getDate() % 2 === 0 ? "jämna" : "udda";
 }
@@ -15,8 +14,9 @@ export function getForbiddenSide(date) {
 export function getAllowedSide(date) {
   return date.getDate() % 2 === 0 ? "udda" : "jämna";
 }
-
-export function parkingTimeLeft(date) {
-
-
+//Returns the time left before the side switches
+export function parkingTimeLeftAsString (date) {
+  const hoursLeft = 23 - date.getHours();
+  const minutesLeft = 59 - date.getMinutes();
+  return `${hoursLeft}h ${minutesLeft}min`;
 }
