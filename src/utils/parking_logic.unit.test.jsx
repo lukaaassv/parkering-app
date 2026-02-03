@@ -5,7 +5,7 @@ vi.mock ("./date_logic.jsx", () => ({
     isWithinParkingTime: vi.fn(),
 }));
 
-import { getForbiddenSide, getAllowedSide, isDateParkingActive } from "./parking_logic";
+import { getForbiddenSide, getAllowedSide, isDateParkingActive, parkingTimeLeftAsString } from "./parking_logic";
 import { getWeekNumber, isWithinParkingTime } from "./date_logic.jsx";
 
 
@@ -68,6 +68,17 @@ describe ("parking_logic.getForbiddenSide", () => {
       it("Returns the side that is forbidden to park on", () => {
         const date = new Date("2026-01-20T12:00:00");
         expect(getForbiddenSide(date)).toBe("jämna")
+    })
+});
+
+describe ("parking_logic.parkingTimeLeftAsString", () => {
+    it("Returns the time left before the side switches (00)", () => {
+        const date = new Date("2026-02-13T23:59:59");
+        expect(parkingTimeLeftAsString(date)).toBe("0h 0min")
+    })
+     it("Returns the time left before the side switches (00)", () => {
+        const date = new Date("2026-02-13T00:00:00");
+        expect(parkingTimeLeftAsString(date)).toBe("23h 59min")
     })
 });
 
