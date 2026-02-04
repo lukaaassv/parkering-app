@@ -1,16 +1,19 @@
-# React + Vite
+# Local parking app
+This app was made to help the user to quickly know which side to park their car on and for how long. The need for this app came from a local municipality implementing new parking rules, which were rather confusing, especially for elder people or people in a hurry. With a simplistic UI and a countdown, users can know which side is allowed to park on instantly, instead of having to figure out the rules from the signs.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Livetest
+https://thankful-river-03fc2d203.4.azurestaticapps.net/
 
-Currently, two official plugins are available:
+## Technologies
+The app is a single-page application developed in React, with automated testing (Vitest) and CI/CD deployment to Azure Static Web Apps. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="736" height="524" alt="parking_app" src="https://github.com/user-attachments/assets/60f2900c-5cb6-4d1f-b6ad-834dd6040174" />
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Display which side to park (odd/even)
+- [x] Display time left until needing to switch side
+- [ ] 7-day visual schedule for parking
+- [ ] Push-notifications when time is about to run out
+- [ ] Interactive map for choosing different parking spots
+- [ ] Favourite page where users can save preffered parking
