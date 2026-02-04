@@ -1,23 +1,20 @@
-import DayCard from "./components/DayCard.jsx";
+import InfoCard from "./components/InfoCard.jsx";
 import TodayCard from "./components/TodayCard.jsx";
 import { getCurrentTimeAsString} from "./utils/date_logic.jsx";
 import { WEEKDAYS, MONTHS } from "./constants/dayAndMonths.jsx";
 import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString } from "./utils/parking_logic.jsx";
 import { useNow } from "./hooks/useNow.jsx";
+import "./App.css";
+
 function App() {
 
-   const now = useNow(); // 👈 custom hook
+   const now = useNow();
 
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-    <h1>{getForbiddenSide(now)}</h1>
-      <DayCard
-        day={{
-          weekday: WEEKDAYS[now.getDay()],
-          date: now.getDate()
-        }}
-      />
+          <h1>Parkering i Rättvik</h1>
+      <div className="container">
+      <InfoCard />
       <TodayCard
         day={{
           weekday: WEEKDAYS[now.getDay()],
@@ -33,7 +30,7 @@ function App() {
           forbidden: getForbiddenSide(now)
         }}
       />
-
+      </div>
     </div>
   );
 }

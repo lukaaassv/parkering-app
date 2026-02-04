@@ -1,6 +1,5 @@
 .day-card{
-  width: min(900px, 95%);
-  margin: 40px auto;       
+  width: 100%;
   padding: 32px 28px;
 
   background: linear-gradient(135deg, #0f172a 0%, #111827 60%, #0b1220 100%);
@@ -13,6 +12,32 @@
     0 16px 40px rgba(0, 0, 0, 0.45),
     0 1px 0 rgba(255,255,255,0.06) inset;
 
-  position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+}
+
+.day-and-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  
+}
+
+.day-and-time .time {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.9;
+}
+
+.day-and-time .date {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info_today {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  line-height: 1.45;
 }

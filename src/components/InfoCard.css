@@ -1,0 +1,21 @@
+.info-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  display: block;
+}
+
+.info-card h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.info-card p {
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.9;
+}
