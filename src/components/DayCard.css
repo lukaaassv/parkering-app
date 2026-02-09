@@ -19,10 +19,14 @@
 .day-card {
     width: 100%;
     height: 50px;
-    background-color: #3fa67a;
+    background-color: #60A561;
+    border-radius: 2px;
 }
 
 .bar {
     height: 50px;
     border-right: 1px dotted black;
+    border-radius: 2px 0px 0px 2px;
+    border-left: 1px solid black;
+
 }

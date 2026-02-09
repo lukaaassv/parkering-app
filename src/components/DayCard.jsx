@@ -9,7 +9,7 @@ function DayCard({date, side}){
         className = "bar" 
         style={{
           width: "70%",
-          backgroundColor: getAllowedSide(date) === side ? "#3fa67a" : "#c04a4a"}}
+          backgroundColor: getAllowedSide(date) === side ? "#60A561" : "#D72638"}}
         ></div>
     </div>
     <p>17:00</p>
