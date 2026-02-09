@@ -5,6 +5,7 @@ import { WEEKDAYS, MONTHS } from "./constants/dayAndMonths.jsx";
 import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString } from "./utils/parking_logic.jsx";
 import { useNow } from "./hooks/useNow.jsx";
 import "./App.css";
+import WeekDays from "./utils/WeekDays.jsx"
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
           forbidden: getForbiddenSide(now)
         }}
       />
+      <WeekDays date={now} side ={"udda"}/>
+      <WeekDays date={now} side={"jämna"}/>
       </div>
     </div>
   );

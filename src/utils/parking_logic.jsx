@@ -14,6 +14,7 @@ export function getForbiddenSide(date) {
 export function getAllowedSide(date) {
   return date.getDate() % 2 === 0 ? "udda" : "jämna";
 }
+
 //Returns the time left before the side switches
 export function parkingTimeLeftAsString (date) {
   const hoursLeft = 23 - date.getHours();

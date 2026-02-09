@@ -1,11 +1,18 @@
-function DayCard({day}){
-    return (<div className = "day-card">
-        <div className="day_of_week">
-            <h3>{day.weekday}</h3>
-        </div>
-        <div className="date">
-            <h3>{day.date}</h3>
-        </div>
+import "./DayCard.css"
+import { getAllowedSide } from "../utils/parking_logic"
+
+function DayCard({date, side}){
+    return (<div className = "day-card-container">
+        <h3>{date.toLocaleDateString("sv-SE")}</h3>
+    <div className = "day-card">
+        <div
+        className = "bar" 
+        style={{
+          width: "70%",
+          backgroundColor: getAllowedSide(date) === side ? "#3fa67a" : "#c04a4a"}}
+        ></div>
+    </div>
+    <p>17:00</p>
     </div>
     )
 

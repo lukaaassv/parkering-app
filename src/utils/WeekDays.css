@@ -1,0 +1,14 @@
+.weekdays {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0px;
+}
+
+
+.info-weekdays {
+    font-size: 16px;
+    margin: 10px 0px;
+}

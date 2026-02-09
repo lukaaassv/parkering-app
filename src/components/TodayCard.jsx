@@ -5,7 +5,7 @@ import "./TodayCard.css";
 
 
 function TodayCard({day, time, side}){
-    return <div className = "day-card">
+    return <div className = "today-card">
         <div className = "day-and-time">
         <div className="day_of_week">
               <h3>{day.weekday} den {day.date} {day.month}</h3>

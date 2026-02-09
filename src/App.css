@@ -11,7 +11,7 @@ html, body, #root {
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  padding: 260px 16px;
+  padding: 5vh 16px;
   box-sizing: border-box
 }
 
