@@ -13,7 +13,7 @@ The app is a single-page application developed in React, with automated testing 
 
 - [x] Display which side to park (odd/even)
 - [x] Display time left until needing to switch side
-- [ ] 7-day visual schedule for parking
+- [x] 7-day visual schedule for parking
 - [ ] Push-notifications when time is about to run out
 - [ ] Interactive map for choosing different parking spots
 - [ ] Favourite page where users can save preffered parking
