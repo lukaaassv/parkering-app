@@ -5,7 +5,7 @@ import { WEEKDAYS, MONTHS } from "./constants/dayAndMonths.jsx";
 import { getForbiddenSide, getAllowedSide, parkingTimeLeftAsString } from "./utils/parking_logic.jsx";
 import { useNow } from "./hooks/useNow.jsx";
 import "./App.css";
-import WeekDays from "./utils/WeekDays.jsx"
+import WeekDays from "./components/WeekDays.jsx"
 
 function App() {
 

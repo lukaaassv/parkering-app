@@ -1,4 +1,4 @@
-import DayCard from "../components/DayCard.jsx";
+import DayCard from "./DayCard.jsx";
 import "./WeekDays.css"
 
 function WeekDays({ startDate = new Date(), side}) {
