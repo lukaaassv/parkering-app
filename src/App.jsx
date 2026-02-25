@@ -18,13 +18,14 @@ function App() {
       <InfoCard />
       <TodayCard
         day={{
+          date: now,
           weekday: WEEKDAYS[now.getDay()],
-          date: now.getDate(),
+          dateOfMonth: now.getDate(),
           month: MONTHS[now.getMonth()],
         }}
         time={{
-          currentTime: getCurrentTimeAsString(now),
-          timeLeft: parkingTimeLeftAsString(now)
+          currentTimeAsString: getCurrentTimeAsString(now),
+          timeLeft: parkingTimeLeftAsString(now),
         }}
         side={{
           allowed: getAllowedSide(now),
