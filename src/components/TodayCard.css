@@ -41,3 +41,7 @@
   background: rgba(255,255,255,0.05);
   line-height: 1.45;
 }
+
+.today-card p {
+  font-size: 22px;
+}
