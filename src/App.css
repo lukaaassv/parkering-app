@@ -12,7 +12,10 @@ html, body, #root {
   justify-content: flex-start;
   gap: 24px;
   padding: 5vh 16px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-image: url('./assets/rättvik.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
