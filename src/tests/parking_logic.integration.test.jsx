@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { isDateParkingActive } from "./parking_logic";
+import { isDateParkingActive } from "../utils/parking_logic.jsx";
 
 
 describe ("parking_logic.isDateParkingActive.jsx", () => {

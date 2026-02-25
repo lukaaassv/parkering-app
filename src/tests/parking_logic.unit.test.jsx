@@ -1,12 +1,12 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
-vi.mock ("./date_logic.jsx", () => ({
+vi.mock ("../utils/date_logic.jsx", () => ({
     getWeekNumber: vi.fn(),
     isWithinParkingTime: vi.fn(),
 }));
 
-import { getForbiddenSide, getAllowedSide, isDateParkingActive, parkingTimeLeftAsString } from "./parking_logic";
-import { getWeekNumber, isWithinParkingTime } from "./date_logic.jsx";
+import { getForbiddenSide, getAllowedSide, isDateParkingActive, parkingTimeLeftAsString } from "../utils/parking_logic.jsx";
+import { getWeekNumber, isWithinParkingTime } from "../utils/date_logic.jsx";
 
 
 beforeEach(() => {
