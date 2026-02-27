@@ -1,5 +1,4 @@
-import { getCurrentTimeAsString, isWithinParkingTime } from "../utils/date_logic";
-import { getForbiddenSide, parkingTimeLeftAsString} from "../utils/parking_logic.jsx";
+import {isWithinParkingTime } from "../utils/date_logic";
 import "./TodayCard.css";
 
 
